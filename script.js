@@ -41,7 +41,7 @@ function updateDOM() {
         if (distance < 0) {
             countdownEl.hidden = true;
             clearInterval(countdownActive);
-            completeElInfo.textContent = `${countdownTitle} ble fullført ${countdownDate}`;
+            completeElInfo.textContent = `Nedtelling for ${countdownTitle} ble fullført ${countdownDate}`;
             completeEl.hidden = false
         } else {
             //Else, show the countdown in progress
