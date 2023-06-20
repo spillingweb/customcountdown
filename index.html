@@ -17,31 +17,31 @@
     <div class="container">
         <!-- Input -->
         <div class="input-container" id="input-container">
-            <h1>Create a Custom Countdown</h1>
+            <h1>Lag en egen nedtelling</h1>
             <form class="form" id="countdownForm">
-                <label for="title">Title</label>
-                <input type="text" placeholder="What are you counting down to?" id="title">
-                <label for="date-picker">Select a Date</label>
+                <label for="title">Tittel</label>
+                <input type="text" placeholder="Hva teller du ned til?" id="title">
+                <label for="date-picker">Velg en dato</label>
                 <input type="date" id="date-picker">
-                <button type="submit">Submit</button>
+                <button type="submit">Start nedtelling</button>
             </form>
         </div>
         <!-- Countdown -->
         <div class="countdown" id="countdown" hidden>
-            <h1 id="countdown-title">Countdown Title Here</h1>
+            <h1 id="countdown-title"></h1>
             <ul>
-                <li><span></span>Days</li>
-                <li><span></span>Hours</li>
-                <li><span></span>Minutes</li>
-                <li><span></span>Seconds</li>
+                <li><span></span>Dager</li>
+                <li><span></span>Timer</li>
+                <li><span></span>Minutter</li>
+                <li><span></span>Sekunder</li>
             </ul>
-            <button id="countdown-button">Reset</button>
+            <button id="countdown-button">Tilbakestill</button>
         </div>
         <!-- Complete -->
         <div class="complete" id="complete" hidden>
-            <h1 class="complete-title">Countdown Complete!</h1>
+            <h1 class="complete-title">Nedtelling fullført!</h1>
             <h1 id="complete-info"></h1>
-            <button id="complete-button">New Countdown</button>
+            <button id="complete-button">Ny nedtelling</button>
         </div>
     </div>
     <!-- Script -->

@@ -41,7 +41,7 @@ function updateDOM() {
         if (distance < 0) {
             countdownEl.hidden = true;
             clearInterval(countdownActive);
-            completeElInfo.textContent = `${countdownTitle} finished on ${countdownDate}`;
+            completeElInfo.textContent = `${countdownTitle} ble fullført ${countdownDate}`;
             completeEl.hidden = false
         } else {
             //Else, show the countdown in progress
@@ -67,7 +67,7 @@ function updateCountdown(e) {
     };
     localStorage.setItem('countdown', JSON.stringify(savedCountdown));
     if (countdownDate === '') {
-        alert('Please select a date for the countdown.');
+        alert('Vennligst velg en dato for nedtellinga.');
     } else {
         // Get number version of current Date, updateDOM
         countdownValue = new Date(countdownDate).getTime();
